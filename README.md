@@ -16,13 +16,15 @@ As first step, we have loaded the data (Table 1) and we have preprocessed it to 
 
 
 ![st1](https://user-images.githubusercontent.com/111541268/211165409-01238535-ac8e-427d-bb29-b2abef4e6682.png)
-     Table1: DataFrame of original Data
+   
+   Table1: DataFrame of original Data
 
 
 
 
 ![st2](https://user-images.githubusercontent.com/111541268/211165422-64034689-4d06-4667-a53c-1a1091c295ed.png)
-      Table 2: Preprocessed Data
+    
+    Table 2: Preprocessed Data
       
 ### Reducing Data Dimensions Using PCA
 
@@ -38,18 +40,22 @@ As third step, we have:
  * Ran the K-means algorithm to predict the K clusters for the cryptocurrencies’ data and be able to create a new DataFrame including predicted clusters and              cryptocurrencies features. This new DataFrame was named clustered_df.
  
  
+ ![st8](https://user-images.githubusercontent.com/111541268/211166024-64305cfc-e83d-431e-bbea-a5ac9a2ef524.png)
+      
+      Fig: Elbow Curve
  
  
- 
- 
+ ![st7](https://user-images.githubusercontent.com/111541268/211166026-48c845f8-2490-41dd-93b6-addf9f7aedf2.png)
+
+      Table: DataFrame including predicted clusters and cryptocurrencies features
  
  
 ### Visualizing Cryptocurrencies Results
 In the last step we have:
 
  * Created scatter plots with Plotly Express and hvplot, to visualize the distinct groups that correspond to the three principal components created in step 2. 
- * Created a table with all the currently tradable cryptocurrencies hvplot.table() function (See Table 5)
- * Scaled the data, created a new DataFrame that has the scaled data to create hvplot.scatter plot of TotalCoinsMined versus TotalCoinSupply by Class. (See Fig. 3)
+ * Created a table with all the currently tradable cryptocurrencies hvplot.table() function
+ * Scaled the data, created a new DataFrame that has the scaled data to create hvplot.scatter plot of TotalCoinsMined versus TotalCoinSupply by Class. 
 
 
 ![st4](https://user-images.githubusercontent.com/111541268/211165703-6d2237cf-e247-4f44-9de8-1f54bb5f2723.png)
